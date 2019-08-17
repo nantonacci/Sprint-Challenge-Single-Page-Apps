@@ -22,4 +22,17 @@ const Stats = styled.p`
   color: grey;
 `;
 
-export { Container, Image, Name, Stats };
+const Nav = styled.div`
+  display: flex;
+`;
+
+const Tab = styled.div`
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  border-radius: 3px;
+  padding: 24px;
+  height: 16px;
+  color: black;
+`;
+
+export { Container, Image, Name, Stats, Nav, Tab };
