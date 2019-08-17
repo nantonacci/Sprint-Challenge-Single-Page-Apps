@@ -1,12 +1,14 @@
 import React from 'react';
+import { Container, Image, Name, Stats } from './Styles.js';
 
-export default function CharacterCard({ name, species }) {
+export default function CharacterCard({ image, name, species, status }) {
   return (
-    <div>
-      <p>{name}</p>
-      <p>{species}</p>
-      {/* <p>Location: {location}</p>
-      <p>Origin: {origin}</p> */}
-    </div>
+    <Container>
+      <Image src={image} />
+      <Name>{name}</Name>
+      <Stats>
+        {species} - {status}
+      </Stats>
+    </Container>
   );
 }
