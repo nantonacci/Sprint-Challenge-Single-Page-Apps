@@ -1,5 +1,14 @@
-import React from "react";
+import React from 'react';
+import { Container, Image, Name, Stats } from './Styles.js';
 
 export default function LocationCard({ name, type, dimension, residents }) {
-  return <span>todo: location</span>;
+  return (
+    <Container>
+      <Name>{name}</Name>
+      <p>
+        {type} - {dimension}
+      </p>
+      {/* <p>{residents}</p> */}
+    </Container>
+  );
 }
